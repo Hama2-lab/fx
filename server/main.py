@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 import json
-#必要なライブラリのインポート
 import math
 import pandas_datareader as web
 import numpy as np
@@ -32,7 +31,6 @@ def fx_data(from_,to_):
     r = requests.get(url)
     data = json.loads(r.text)
     data = data['Time Series FX (Daily)']
-    # data = data['Time Series FX (Daily)']
     print(data)
     fx_data = []
 

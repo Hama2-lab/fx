@@ -43,8 +43,8 @@ const useFetchData = (from, to) => {
 };
 
 function App() {
-  const [from, setFrom] = useState("JPY");
-  const [to, setTo] = useState("USD");
+  const [from, setFrom] = useState("USD");
+  const [to, setTo] = useState("JPY");
 
   const { closeData, predictionsData } = useFetchData(from, to);
 
